@@ -156,16 +156,12 @@ public class GameView extends SurfaceView implements Runnable {
                     shooter.isGoingLeft = true;
                 }
                 if(event.getY() < screenY / 2) {
-                    /*shooter.shootCounter++;
-                    shooter.getFireShooter(true);
-                    newBullet();*/
                     shooter.toShoot++;
                 }
                 break;
             case MotionEvent.ACTION_UP:
                 shooter.isGoingLeft = false;
                 shooter.isGoingRight = false;
-                shooter.getFireShooter(false);
                 break;
         }
 

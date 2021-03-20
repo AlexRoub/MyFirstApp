@@ -47,11 +47,7 @@ public class Shooter {
 
     Bitmap getFireShooter (boolean shoot) {
         if(toShoot != 0){
-            /*if (shootCounter != 0 && shootCounter <= toShoot) {
-                gameView.newBullet();
-                return shooter2;
-            }*/
-            if (shootCounter ==1 ) {
+            if (shootCounter == 1 ) {
                 shootCounter++;
                 return shooter2;
             }
